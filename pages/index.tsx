@@ -67,9 +67,9 @@ export default function HomePage() {
       <Box style={{ opacity: isVisible ? '1' : '0', transition: 'opacity 1.35s ease-in' }}>
     <Block
       type="banner"
-      heading="We have recently moved locations!"
+      heading="We have recently moved locations to 26 Legend Court, Ancaster Units 3 and 4"
       background="navy"
-      link="https://www.google.com/maps/place/1039+Upper+James+St,+Hamilton,+ON+L9C+3A6,+Canada/@43.221175,-79.884151,14z/data=!4m6!3m5!1s0x882c9afb17e9091d:0xf6795f7dcc14fe39!8m2!3d43.2211747!4d-79.8841514!16s%2Fg%2F11c43tncmx?hl=en&entry=ttu"
+      link="https://www.google.com/maps/place/26+Legend+Ct,+Ancaster,+ON+L9K+1J3/@43.2274685,-79.9486487,200m/data=!3m2!1e3!4b1!4m6!3m5!1s0x882c85b8062e6f97:0x8a7b4d04a7fd7a55!8m2!3d43.2274675!4d-79.948005!16s%2Fg%2F11v3z1860b?hl=en&entry=ttu"
       color="white"
       icon={<IconMap size={20} />}
     />
@@ -158,7 +158,47 @@ export default function HomePage() {
               stack
               heading="Pediatrics"
               subheading="Expert Heart Care"
-              paragraph="Cardiology consultations, ECGs, and echocardiograms for your children."
+              paragraph={`
+    Cardiology consultations, ECGs, holter monitors and echocardiograms for your children. 
+    We provide comprehensive care with a focus on early diagnosis and treatment of heart conditions in children.
+    
+    Pediatric Cardiology consultation
+    - Echocardiogram
+    - ECG
+    - Holter
+
+    Pediatric Respirology and Asthma Consultation
+    General Pediatric Consultations
+
+    Other pediatric, general pediatric, routine pediatric care and urgent care services offered at Ancaster Central Children’s Clinic:
+    - Developmental assessment 
+    - School, learning and behavioural issues
+    - ADHD assessment and treatment
+    - Common Pediatric ailments
+    - Infant and premature newborn follow-up care
+    - Adolescent and teenager clinic
+    - Chest pain, murmur, fainting and suspected heart disease clinic
+    - Asthma, allergies and respiratory diseases
+    - Referrals accepted from hospital after discharge or from family doctors if concerned about pediatric ailment
+
+    - Newborn Care
+    - Well baby care
+    - Routine vaccinations
+    - Travel advice and vaccination recommendations
+    - Walk-in urgent care for fever, pneumonia, rashes, ear infections, injury, diarrhea, vomiting, rashes etc.
+    - ADHD
+    - Anxiety
+    - Autism assessment
+    - Developmental assessment
+
+    All consultations are done only if accompanied with referral from your child's doctor, family doctor, or walk-in clinic.
+
+    Walk-in urgent care is available from 10 am - 4:00 pm on:
+    - Tuesdays
+    - Thursdays
+    - Fridays
+    - Some Saturdays (please email or call the clinic prior to arrival)
+  `}
             />
             <Block
               type="feature"
@@ -216,7 +256,7 @@ export default function HomePage() {
                 imageCircle
                 heading="Dr. Rubeena Khan"
                 subheading="Pediatric Cardiologist"
-                paragraph={["Dr. Giraldo Salazar went to medical school in Colombia where she was born. She moved to Canada in 2009 and completed her residency in Pediatrics at McMaster University and her Pediatric Respiratory Medicine training at University of Toronto. She is fluent in English and Spanish. Her hobbies include running and mountain biking."]}
+                paragraph={["Dr. Rubeena Khan brings extensive training and expertise in Pediatrics and Pediatric Cardiology. She completed her initial medical training and postgraduate residency in India, where she earned a Master’s degree in Pediatrics from the prestigious All India Institute of Medical Sciences, New Delhi. Following this, Dr. Khan pursued four years of pediatric residency training at McMaster University and advanced her specialization with a Pediatric Cardiology fellowship at the renowned Hospital for Sick Children, University of Toronto. Dr. Khan is fluent in English, Urdu, and Hindi, enabling her to serve a diverse patient population with the highest standard of care."]}
               />
             </Flex>
             <Flex direction="column">
@@ -226,7 +266,7 @@ export default function HomePage() {
                 imageCircle
                 heading="Dinisha Patel"
                 subheading="Nurse Practitioner"
-                paragraph={["Immense exposure and background in General Paediatrics. Experience in working with families with young children. Excellent multidisciplinary collaborative approach in treating children and advising their schools and their families. Well rounded management of children presenting with various developmental, behavioural and learning concerns, including assessment of attention, deficit hyperkinetic disorder (ADHD), autism, anxiety, mood disorders, depression, behavioural issues and developmental delays. Excellent in counselling, paediatric behavioural disorders, including temper, tantrums Oppositional, defiant disorders. Experience in paediatric primary care, care of the venue, born and mild, routine preventative vaccinations, and travel vaccinations before making international travel."]}
+                paragraph={["Immense exposure and background in General Paediatrics. Experience in working with families with young children. Excellent multidisciplinary collaborative approach in treating children and advising their schools and their families. Well rounded management of children presenting with various developmental, behavioural and learning concerns, including assessment of attention, deficit hyperkinetic disorder (ADHD), autism, anxiety, mood disorders, depression, behavioural issues and developmental delays. Excellent in counselling, paediatric behavioural disorders, including temper, tantrums Oppositional, defiant disorders. Experience in paediatric primary care, care of the venue, born and mild, routine preventative vaccinations, and travel vaccinations before making international travel. Parent Resources pages: https://www.aboutkidshealth.ca/ "]}
                 image="team/1.jpeg"
               /> 
             </Flex>
@@ -237,7 +277,7 @@ export default function HomePage() {
                 imageCircle
                 heading="Dr. Juliana Giraldo Salazar"
                 subheading="Pediatric Respirologist"
-                paragraph={["Dr. Giraldo Salazar specializes in treating asthma, allergies, and respiratory diseases in children."]}
+                paragraph={["Dr. Giraldo Salazar specializes in treating asthma, allergies, and respiratory diseases in children. She went to medical school in Colombia where she was born. She moved to Canada in 2009 and completed her residency in Pediatrics at McMaster University and her Pediatric Respiratory Medicine training at University of Toronto. She is fluent in English and Spanish. Her hobbies include running and mountain biking."]}
                 image="team/2.jpg"
               />
             </Flex>
@@ -260,7 +300,7 @@ export default function HomePage() {
           siteKey={recaptchaSiteKey}
           heading="Get in Touch"
           paragraphs={[
-              "Feel free to reach out with any questions you might have. We look forward to hearing from you!",
+              "Feel free to reach out with any questions you might have. We look forward to hearing from you! Best way to, reach clinic for non urgent matters is via email admin@rubeenakhanpediatrics.ca. We prefer Email for bookings and non urgent matters",
           ]}
           buttonLabel="Submit"
           button={{ backgroundColor: 'navy', color: '#FFFFFF' }}
@@ -273,7 +313,7 @@ export default function HomePage() {
       >
         <Block
           type="map"
-          address="1039 Upper James St. Hamilton Ontario"
+          address="26 Legend Court - Units 3 and 4, Ancaster. L9K 1J3"
           title="Ancaster Central Childrens Clinic"
           height={400}
           borderRadius="8px"
